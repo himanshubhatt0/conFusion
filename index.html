@@ -38,9 +38,14 @@
                     <h1>Ristorante con Fusion</h1>
                     <p>We take inspiration from the World's best cuisines, and create a unique fusion experience. Our lipsmacking creations will tickle your culinary senses!</p>
                 </div>
-                <div class="col-12 col-sm align-self-center">
+                <div class="col-12 col-sm-3 align-self-center">
                     <img src="./img/logo.png" class="image-fiuid" alt="">
                 </div>
+                <div class="col-12 col-sm-3  bg-warning align-self-center">
+                <button class="navbar-toggler "  type="button" data-toggle="collapse" data-target="#navbar2">
+                    Reserve Table
+               </button>
+               </div>
             </div>
         </div>
     </header>
@@ -64,12 +69,20 @@
 
 
         <div class="row row-content align-items-center">
-            <div class="co-12 col-sm-4 col-md-3">
+            <div class="co-12 col-sm-4 col-md-3 order-sm-first">
                 <h3>This Month's Promotions</h3>
             </div>
-            <div class="col col-sm col-md">
-                <h2>Weekend Grand Buffet</h2>
-                <p>Featuring mouthwatering combinations with a choice of five different salads, six enticing appetizers, six main entrees and five choicest desserts. Free flowing bubbly and soft drinks. All for just $19.99 per person </p>
+            <div class="col order-sm-last col-sm col-md ">
+            <div class="media">
+                <div class="media-body">
+                    
+                    
+                        <h4 class="mt-0">Weekend Grand Buffet<span class="badge badge-danger">NEW</span></h4>
+                        <p>Featuring mouthwatering combinations with a choice of five different salads, six enticing appetizers, six main entrees and five choicest desserts. Free flowing bubbly and soft drinks. All for just $19.99 per person </p>
+                    
+                </div>
+                <img class="d-flex ml-3 img-thumbnail align-self-center" src="./img/buffet.png">
+            </div>
             </div>
         </div>
 
@@ -89,6 +102,54 @@
                
             </div>
         </div>
+        <div class="collapse navbar-collapse" id="navbar2">
+      <form>
+        <div class="row form-group bg-warning">
+            <div class="col-sm bg-secondery">
+                <h4>Reserve a Table</h4>
+            </div>
+        </div>
+      <div class="row form-group">
+          <div class="col-sm col-md-3">
+             Number of Guest
+          </div>
+          <div class="col-sm col-md-6">
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                <label class="form-check-label" for="inlineRadio1">1</label>
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                <label class="form-check-label" for="inlineRadio2">2</label>
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
+                <label class="form-check-label" for="inlineRadio3">3</label>
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio4" value="option4">
+                <label class="form-check-label" for="inlineRadio4">4</label>
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio5" value="option5">
+                <label class="form-check-label" for="inlineRadio5">5</label>
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio6" value="option6">
+                <label class="form-check-label" for="inlineRadio6">6</label>
+
+              </div>
+          </div>
+        
+      </div>
+      <div class="row form-group">
+          <div class="col-sm col-md-3">
+              Date and Time
+          </div>
+          <div class="col-sm col-md-4">
+              <input type="date" >
+          </div>
+          <div class="col-sm col-md-4">
+            <input type="time" >
+        </div>
+      </div>
+      <div class="row form-group align-items-center">
+          <div class="col-offset-4 col-md-8">
+            <button type="submit" class="btn btn-primary">Reserve</button>
+          </div>
+      
+      </div>
+      </form>
     </div>
 
     <footer class="footer">
